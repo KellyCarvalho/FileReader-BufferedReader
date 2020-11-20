@@ -1,0 +1,76 @@
+Qual é a diferença entre FileReader e BufferedReader em Java
+Diferença Entre
+o principal diferença entre FileReader e BufferedReader em Java é que O FileReader lê o caractere de um arquivo enquanto o BufferedReader lê o caractere de outro Reader. Java é
+
+Qual é a diferença entre FileReader e BufferedReader em Java
+Conteúdo:
+O que é o FileReader em Java?
+O que é BufferedReader em Java
+Diferença entre FileReader e BufferedReader em Java
+
+ 
+o principal diferença entre FileReader e BufferedReader em Java é que O FileReader lê os caracteres de um arquivo enquanto o BufferedReader lê os caracteres de outro Reader.
+
+
+Java é uma linguagem de programação moderna no desenvolvimento de software. Ele permite programação orientada a objetos e fornece recursos como coletor de lixo automático, suporte a multithreading, etc. Os desenvolvedores usam Java para aplicativos independentes, da Web, móveis e muitos outros aplicativos. Além disso, também é possível executar operações em arquivos usando Java. Duas classes para realizar essa tarefa são FileReader e BufferedReader.
+
+Principais áreas cobertas
+1. O que é o FileReader em Java?
+- Definição, Funcionalidade
+2. O que é o BufferedReader em Java?
+- Definição, Funcionalidade
+3. Qual é a diferença entre FileReader e BufferedReader em Java
+- Comparação de diferenças-chave
+
+Termos chave
+FileReader, BufferedReader, Coletor de Lixo, Java, Multithreading
+
+
+
+
+
+
+O que é o FileReader em Java?
+FileReader é uma classe que ajuda a ler dados de um arquivo. Ele retorna dados em formato de byte. A classe FileReader possui os dois métodos a seguir.
+
+int ler () - Este método retorna um caractere no formato ASCII. Retorna -1 no final do arquivo.
+
+void close () Isso ajuda a fechar o objeto FileReader.
+
+Além disso, existem duas maneiras de escrever o construtor.
+
+FileReader (arquivo de string) - O programador passa o arquivo como uma string. Ele abre o arquivo no modo de leitura e, se o arquivo não estiver disponível, lança FileNotFoundException.
+
+FileReader (arquivo de arquivo) - O programador passa a instância do arquivo. Ele abre o arquivo no modo de leitura e, se o arquivo não estiver disponível, lança FileNotFoundException.
+
+
+O que é BufferedReader em Java
+BufferReader é uma classe que ajuda a ler texto de um fluxo de entrada baseado em caracteres. Ele lê caracteres usando outro Reader. Alguns métodos na classe BufferReader são os seguintes.
+
+int ler () - Este método lê um único caractere.
+
+String readLine () - Isto lê uma linha de texto.
+
+void close () - Este método fecha o fluxo de entrada e libera os recursos do sistema associados.
+
+Além disso, existem duas maneiras de escrever o construtor.
+
+BufferedReader (Reader rd) - Cria um fluxo de entrada de caracteres em buffer que usa o tamanho padrão para um buffer de entrada.
+
+BufferedReader (Reader rd, tamanho int) - Cria um fluxo de entrada de caracteres em buffer que usa o tamanho especificado para um buffer de entrada.
+
+
+https://pt.strephonsays.com/what-is-the-difference-between-filereader-and-bufferedreader-in-java#:~:text=FileReader%20e%20BufferedReader%20são%20duas,os%20caracteres%20de%20outro%20Reader.
+
+
+
+
+
+
+
+
+
+
+
+
+
