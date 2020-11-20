@@ -14,13 +14,11 @@ public class Program {
 		//BufferedReader: é instanciado do fileReader e implementa otimizações através do buffer de memória
 		
 		String path = "src\\Texto\\exemplo.txt";
-		FileReader fr =null;
-		BufferedReader br=null;
 		
-		try {
+		
+		try(BufferedReader br = new BufferedReader(new FileReader(path))) {
 			
-			fr = new FileReader(path);
-			br = new BufferedReader(fr);
+		
 			
 			String line = br.readLine();
 			
@@ -32,21 +30,8 @@ public class Program {
 			
 		}catch(IOException e) {
 			System.out.println("Error: "+e.getMessage());
-		}finally {
-			try {
-				if(br!=null) {
-					br.close();
-				}
-				
-				if(fr!=null) {
-					br.close();
-				}
-				
-			}catch(IOException e) {
-				e.printStackTrace();
-			}
-			
 		}
+		
 
 	}
 
